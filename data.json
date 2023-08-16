@@ -5,6 +5,10 @@
       {
         "resource": "book",
         "scope": "get"
+      },
+         {
+        "resource": "book",
+        "scope": "order"
       }
     ],
     "user": [
