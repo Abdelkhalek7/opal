@@ -1,6 +1,6 @@
 package example
 
-default allow := false                              # unless otherwise defined, allow is false
+                             # unless otherwise defined, allow is false
 
 
 
