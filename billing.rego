@@ -1,4 +1,4 @@
-package billing
+package example
 
 default allow := false                              # unless otherwise defined, allow is false
 
