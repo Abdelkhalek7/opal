@@ -1,5 +1,5 @@
 {
-  "roles": ["admin", "user", "guest","writer"],
+  "roles": ["admin", "user", "guest"],
   "permissions": {
     "guest": [
       {
