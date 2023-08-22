@@ -1,6 +1,6 @@
 {
   "roles": ["admin", "user", "guest"],
-  "resource": {
+  "resources": {
     "book": ["read", "order", "review"],
     "document": ["read", "order", "review"],
     "email": ["read", "send"]
