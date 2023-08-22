@@ -1,29 +1,22 @@
 {
-  "roles": ["admin", "user"],
+  "roles": ["admin", "user", "guest"],
+  "resource": {
+    "book": ["read", "order", "review"],
+    "document": ["read", "order", "review"],
+    "email": ["read", "send"]
+  },
+  "scopes": ["read", "order", "review", "send"],
   "permissions": {
-    "guest": [
-      {
-        "resource": "book",
-        "scope": "get"
-      },
-         {
-        "resource": "book",
-        "scope": "order"
-      }
-    ],
-    "user": [
-      {
-        "resource": "book",
-        "scope": "get"
-      },
-      {
-        "resource": "book",
-        "scope": "review"
-      },
-      {
-        "resource": "book",
-        "scope": "order"
-      }
-    ]
+    "book": {
+      "read": ["user", "guest"],
+      "order": ["user"],
+      "review": ["user"]
+    },
+    "document": {
+      "read": ["user", "guest"],
+      "order": ["user"],
+      "review": ["user"]
+    },
+    "email": { "read": ["user", "guest"], "send": ["user"] }
   }
 }
